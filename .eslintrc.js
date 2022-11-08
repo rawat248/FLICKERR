@@ -14,8 +14,14 @@ module.exports = {
   rules: {
     'react/jsx-uses-react': 'error',
     'react/jsx-uses-vars': 'error',
-    'linebreak-style': 'off',
-    semi: ['error', 'always']
+    'linebreak-style': 0,
+    quotes: [
+      'error',
+      'single'
+    ],
+    semi: [
+      'error',
+      'always']
 
   }
 };
