@@ -4,8 +4,10 @@ module.exports = {
     commonjs: true,
     es2021: true
   },
-  extends: 'standard',
-  plugins: ['react'],
+  extends: [
+    'standard',
+    'plugin:react/recommended'
+  ],
   overrides: [
   ],
   parserOptions: {
@@ -13,7 +15,6 @@ module.exports = {
   },
   rules: {
     'react/jsx-uses-react': 'error',
-    'react/jsx-uses-vars': 'error',
     'linebreak-style': 0,
     quotes: [
       'error',
