@@ -1,0 +1,37 @@
+body{
+    background-color: whitesmoke;
+    font-family: 'Poppins', sans-serif;
+    color: #41729f;
+    text-align: center;
+}
+
+h1{
+    font-size: 4em;
+    
+}
+
+h2{
+    font-size: 2em;
+}
+
+.form{
+    max-width: 460px;
+    display: flex;
+    margin-left: 400px;
+}
+.form button {
+    border: none;
+    padding: 0px 15px;
+    border-radius: 0 0.35em 0.35em 0;
+    cursor: pointer;
+    background-color: blueviolet;
+  }
+  input {
+    width: 100%;
+    background-color: #edeff0;
+    padding: 10px 15px;
+    border: 3px solid #d7dbdf;
+    border-right: none;
+    border-radius: 0.35em 0 0 0.35em;
+    
+  }
