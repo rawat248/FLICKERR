@@ -4,25 +4,15 @@ module.exports = {
     commonjs: true,
     es2021: true
   },
-  extends: [
-    'standard',
-    'plugin:react/recommended'
-  ],
-  overrides: [
-  ],
+  extends: ["standard", "plugin:react/recommended"],
+  overrides: [],
   parserOptions: {
-    ecmaVersion: 'latest'
+    ecmaVersion: "latest"
   },
   rules: {
-    'react/jsx-uses-react': 'error',
-    'linebreak-style': 0,
-    quotes: [
-      'error',
-      'single'
-    ],
-    semi: [
-      'error',
-      'always']
-
+    "react/jsx-uses-react": "error",
+    "linebreak-style": 0,
+    quotes: ["error", "double"],
+    semi: ["error", "always"]
   }
 };
