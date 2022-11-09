@@ -1,0 +1,22 @@
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav li {
+  width: 100px;
+  display: inline-block;
+  background: #6e9ac4;
+  margin: 8px;
+  height: 25px;
+  border-radius: 2px;
+  padding: 4px;
+}
+
+.nav li .active {
+  background-color: #41729f;
+}
+
+.nav li:hover {
+  background-color: #41729f;
+}
