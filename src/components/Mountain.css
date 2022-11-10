@@ -1,0 +1,18 @@
+h2 {
+  font-size: 2em;
+}
+.image {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.image img {
+  width: 220px;
+  height: 165px;
+  margin-bottom: 15px;
+  overflow: hidden;
+  transition: transform 1.25s;
+}
+.image img:hover {
+  transform: scale(1.25);
+}
