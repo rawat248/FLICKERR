@@ -16,7 +16,11 @@ h2 {
 .form {
   max-width: 460px;
   display: flex;
-  margin-left: 400px;
+  /* margin-left: 400px; */
+  margin: 0 auto 32px;
+  /* align-items: center; */
+  /* justify-content: space-between; */
+  
 }
 
 .form button {

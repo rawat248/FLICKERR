@@ -6,7 +6,7 @@ const Nav = () => {
   return (
     <nav className="nav">
       <ul className="navbar">
-        <li className="focus">
+        <li>
           <NavLink to="/mountain">Mountain</NavLink>
         </li>
         <li>
