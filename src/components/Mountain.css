@@ -12,7 +12,6 @@ h2 {
   height: 165px;
   margin-bottom: 15px;
   overflow: hidden;
-  /* transform: scale(1.25); */
   transition: transform 1.25s;
 }
 .image img:hover {

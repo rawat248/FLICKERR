@@ -9,17 +9,19 @@ import mountainImage5 from "../assets/p6.jpeg";
 
 const Birds = () => {
   const setInput = "Birds";
-  return <div>
-    <h2>{setInput} Pictures</h2>
-    <div className="image">
-    <img src={mountainImage} alt="a table full of delicious food"></img>
-    <img src={mountainImage1} alt="a table full of delicious food"></img>
-    <img src={mountainImage2} alt="a table full of delicious food"></img>
-    <img src={mountainImage3} alt="a table full of delicious food"></img>
-    <img src={mountainImage4} alt="a table full of delicious food"></img>
-    <img src={mountainImage5} alt="a table full of delicious food"></img>
+  return (
+    <div>
+      <h2>{setInput} Pictures</h2>
+      <div className="image">
+        <img src={mountainImage} alt="a table full of delicious food"></img>
+        <img src={mountainImage1} alt="a table full of delicious food"></img>
+        <img src={mountainImage2} alt="a table full of delicious food"></img>
+        <img src={mountainImage3} alt="a table full of delicious food"></img>
+        <img src={mountainImage4} alt="a table full of delicious food"></img>
+        <img src={mountainImage5} alt="a table full of delicious food"></img>
+      </div>
     </div>
-  </div>;
+  );
 };
 
 export default Birds;

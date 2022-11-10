@@ -1,39 +1,34 @@
 .nav li {
-  /* width: 100px; */
-  display: inline-block;
-  
-  }
-.nav a{
+  width: 100px;
+  display: inline;
+}
+.nav a {
+  width: 100%;
   background-color: #6e9ac4;
-  margin: 6px;border-radius: 2px;
+  margin: 6px;
+  border-radius: 2px;
   padding: 8px;
   text-decoration: none;
   color: white;
-  width: 300px;
-  
-  
 }
 .nav .active,
 .nav a:hover {
-  background-color:#41729f;
+  background-color: #41729f;
   width: 100px;
 }
-@media only screen and (max-width: 400px) {
-  body {background-color: red;}
-  a {
-      
-      display: block;
-      background-color: #6e9ac4;
-      margin: 6px;border-radius: 2px;
-      padding: 4px;
-      text-decoration: none;
-      color: white;
-      
-      }
-      .nav .active,
-.nav a:hover {
-background-color:#41729f;
-width: 100px;
-}
 
+@media only screen and (max-width: 400px) {
+  a {
+    display: block;
+    background-color: #6e9ac4;
+    margin: 6px;
+    border-radius: 2px;
+    padding: 4px;
+    text-decoration: none;
+    color: white;
+  }
+  .nav .active,
+  .nav a:hover {
+    background-color: #41729f;
+  }
 }
