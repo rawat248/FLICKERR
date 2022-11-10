@@ -14,7 +14,6 @@
 .nav .active,
 .nav a:hover {
   background-color: #41729f;
-  width: 100px;
 }
 
 @media only screen and (max-width: 400px) {

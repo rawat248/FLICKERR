@@ -8,17 +8,16 @@ import mountainImage4 from "../assets/p5.jpeg";
 import mountainImage5 from "../assets/p6.jpeg";
 
 const Mountain = () => {
-  const setInput = "Mountain";
   return (
     <div>
-      <h2>{setInput} Pictures</h2>
+      <h2>Mountain Pictures</h2>
       <div className="image">
-        <img src={mountainImage} alt="a table full of delicious food"></img>
-        <img src={mountainImage1} alt="a table full of delicious food"></img>
-        <img src={mountainImage2} alt="a table full of delicious food"></img>
-        <img src={mountainImage3} alt="a table full of delicious food"></img>
-        <img src={mountainImage4} alt="a table full of delicious food"></img>
-        <img src={mountainImage5} alt="a table full of delicious food"></img>
+        <img src={mountainImage} alt="Mountain image"></img>
+        <img src={mountainImage1} alt="Mountain image"></img>
+        <img src={mountainImage2} alt="Mountain image"></img>
+        <img src={mountainImage3} alt="Mountain image"></img>
+        <img src={mountainImage4} alt="Mountain image"></img>
+        <img src={mountainImage5} alt="Mountain image"></img>
       </div>
     </div>
   );

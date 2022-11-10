@@ -6,7 +6,6 @@ h2 {
   flex-flow: row wrap;
   justify-content: space-between;
 }
-
 .image img {
   width: 220px;
   height: 165px;

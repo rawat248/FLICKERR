@@ -26,7 +26,7 @@ h2 {
   padding: 0px 15px;
   border-radius: 0 0.35em 0.35em 0;
   cursor: pointer;
-  background-color: blueviolet;
+  background: #41729f;
 }
 
 input {
@@ -36,4 +36,5 @@ input {
   border: 3px solid #d7dbdf;
   border-right: none;
   border-radius: 0.35em 0 0 0.35em;
+  height: 10px;
 }
