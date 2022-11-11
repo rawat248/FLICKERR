@@ -16,13 +16,33 @@
   background-color: #41729f;
 }
 
-@media only screen and (max-width: 400px) {
-  a {
-    display: block;
+@media only screen and (max-width: 320px) {
+  .nav a {
+    width: 70%;
     background-color: #6e9ac4;
     margin: 6px;
     border-radius: 2px;
-    padding: 4px;
+    padding: 8px;
+    text-decoration: none;
+    color: white;
+    display: block;
+  }
+  .nav .active,
+  .nav a:hover {
+    background-color: #41729f;
+  }
+}
+@media only screen and(min-width:320px) and(max-width:320px) {
+  .nav li {
+    width: 50px;
+    display: inline;
+  }
+  .nav a {
+    width: 10%;
+    background-color: #6e9ac4;
+    margin: 4px;
+    border-radius: 2px;
+    padding: 8px;
     text-decoration: none;
     color: white;
   }

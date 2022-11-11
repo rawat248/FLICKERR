@@ -11,13 +11,26 @@ const Beaches = () => {
   return (
     <div>
       <h2>Beaches Pictures</h2>
-      <div className="image">
-        <img src={mountainImage} alt="Mountain Image"></img>
-        <img src={mountainImage1} alt="Mountain Image"></img>
-        <img src={mountainImage2} alt="Mountain Image"></img>
-        <img src={mountainImage3} alt="Mountain Image"></img>
-        <img src={mountainImage4} alt="Mountain Image"></img>
-        <img src={mountainImage5} alt="Mountain Image"></img>
+      <div className="portrait">
+        <div className="wrapper">
+          <img src={mountainImage} alt="Mountain image"></img>
+        </div>
+        <div className="wrapper">
+          <img src={mountainImage1} alt="Mountain image"></img>
+        </div>
+        <div className="wrapper">
+          <img src={mountainImage2} alt="Mountain image"></img>
+        </div>
+        <div className="wrapper">
+          <img src={mountainImage3} alt="Mountain image"></img>
+        </div>
+
+        <div className="wrapper">
+          <img src={mountainImage4} alt="Mountain image"></img>
+        </div>
+        <div className="wrapper">
+          <img src={mountainImage5} alt="Mountain image"></img>
+        </div>
       </div>
     </div>
   );
