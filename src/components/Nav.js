@@ -5,20 +5,23 @@ import { NavLink } from "react-router-dom";
 const Nav = () => {
   return (
     <nav className="nav">
-      <ul className="navbar">
-        <li className="focus">
-          <NavLink to="/mountain">Mountain</NavLink>
-        </li>
-        <li>
-          <NavLink to="/beaches">Beaches</NavLink>
-        </li>
-        <li>
-          <NavLink to="/birds">Birds</NavLink>
-        </li>
-        <li>
-          <NavLink to="/food">Food</NavLink>
-        </li>
-      </ul>
+      <div className="navbar">
+        <NavLink to="/mountain" className="bar">
+          Mountain
+        </NavLink>
+
+        <NavLink to="/beaches" className="bar">
+          Beaches
+        </NavLink>
+
+        <NavLink to="/birds" className="bar">
+          Birds
+        </NavLink>
+
+        <NavLink to="/food" className="bar">
+          Food
+        </NavLink>
+      </div>
     </nav>
   );
 };

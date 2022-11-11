@@ -1,22 +1,36 @@
-a {
+.nav a {
   text-decoration: none;
-  color: white;
 }
-
-.nav li {
+ul {
+  list-style-type: none;
+}
+.bar {
+  background-color: #6e9ac4;
+  margin: 5px;
+  padding: 3px;
   width: 100px;
-  display: inline-block;
-  background: #6e9ac4;
-  margin: 8px;
-  height: 25px;
+  color: white;
   border-radius: 2px;
-  padding: 4px;
 }
 
-.nav li .active {
+.navbar {
+  display: flex;
+  justify-content: center;
+}
+
+.nav .active,
+.nav a:hover {
   background-color: #41729f;
 }
 
-.nav li:hover {
-  background-color: #41729f;
+@media only screen and (max-width: 320px) {
+  .navbar {
+    flex-wrap: wrap;
+  }
+  .bar {
+    margin: 4px;
+    padding: 4px;
+    display: block;
+    width: 100%;
+  }
 }
