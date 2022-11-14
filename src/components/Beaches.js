@@ -24,6 +24,7 @@ const Beaches = () => {
         <div className="wrapper">
           <img src={mountainImage3} alt="Mountain image"></img>
         </div>
+
         <div className="wrapper">
           <img src={mountainImage4} alt="Mountain image"></img>
         </div>
