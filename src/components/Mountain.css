@@ -22,8 +22,11 @@ img {
 .wrapper:hover img {
   transform: scale(1.25);
 }
-@media only screen and (max-width: 605px) {
+@media only screen and (max-width: 320px) and (min-width: 605px) {
   h2 {
     text-align: center;
+  }
+  .portrait {
+    display: block;
   }
 }
