@@ -1,23 +1,31 @@
 import React from "react";
 import Header from "./components/Header";
-import Mountain from "./components/Mountain";
-import Beaches from "./components/Beaches";
-import Birds from "./components/Birds";
-import Food from "./components/Food";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Data from "./Data/Data";
+import Search from "./components/Search";
+import Item from "./components/Item";
+import { Routes, Route, useNavigate } from "react-router-dom";
+
 const App = () => {
+  const navigate = useNavigate();
+  const searchHandler = (e, navigate, searchInput) => {
+    e.preventDefault();
+    e.currentTarget.reset();
+    const url = `/search/${searchInput}`;
+    navigate(url);
+  };
   return (
-    <BrowserRouter>
-      <Header />
+    <Data>
+      <Header searchHandler={searchHandler} navigate={navigate} />
       <div>
         <Routes>
-          <Route path="/mountain" element={<Mountain />} />
-          <Route path="/beaches" element={<Beaches />} />
-          <Route path="/birds" element={<Birds />} />
-          <Route path="/food" element={<Food />} />
+          <Route path="/mountain" element={<Item Search="Mountain" />} />
+          <Route path="/beaches" element={<Item Search="Beaches" />} />
+          <Route path="/birds" element={<Item Search="Birds" />} />
+          <Route path="/food" element={<Item Search="Food" />} />
+          <Route path="/search/:input" element={<Search />} />
         </Routes>
       </div>
-    </BrowserRouter>
+    </Data>
   );
 };
 

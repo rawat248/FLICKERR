@@ -1,10 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Form.css";
+import PropTypes from "prop-types";
 
-const Form = () => {
+const Form = ({ searchHandler, navigate }) => {
+  const [keyword, setKeyword] = useState("");
+
+  const updateSearch = (e) => {
+    setKeyword(e.target.value);
+  };
+
   return (
-    <form className="form">
-      <input type="text" name="search" placeholder="Search..." />
+    <form
+      className="form"
+      onSubmit={(e) => searchHandler(e, navigate, keyword)}
+    >
+      <input
+        type="text"
+        value={keyword}
+        name="search"
+        placeholder="Search..."
+        onChange={updateSearch}
+      />
       <button type="submit">
         <svg height="32" width="32">
           <path
@@ -16,6 +32,12 @@ const Form = () => {
       </button>
     </form>
   );
+};
+Form.propTypes = {
+  navigate: PropTypes.string.isRequired
+};
+Form.propTypes = {
+  searchHandler: PropTypes.string.isRequired
 };
 
 export default Form;
