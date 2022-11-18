@@ -5,7 +5,7 @@ It's a gallery based project which shows different images by clicking on links. 
 ## Images ##
 ![Alt text](F1.jpeg)
 
-![Alt text](../../../../../../../C:/Users/Celestial/Documents/React%20practice/FLICKER/my-app/F2.jpeg)
+![Alt text](F2.jpeg)
 
 By clicking on particular links,images will shown in the UI.
 
