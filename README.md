@@ -3,9 +3,9 @@
 It's a gallery based project which shows different images by clicking on links. Search bar displays images of a particular search input. We used React Router to make links.
 
 ## Images ##
-![Alt text](../../../../../../../C:/Users/Celestial/Documents/React%20practice/FLICKER/my-app/F1.png)
+![Alt text](F1.jpeg)
 
-![Alt text](../../../../../../../C:/Users/Celestial/Documents/React%20practice/FLICKER/my-app/F2.png)
+![Alt text](F2.jpeg)
 
 By clicking on particular links,images will shown in the UI.
 
