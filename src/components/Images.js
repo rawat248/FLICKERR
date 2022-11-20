@@ -3,11 +3,11 @@ import { Image } from "../Data/Data";
 import Picture from "./Picture";
 import PropTypes from "prop-types";
 
-const Images = ({ Search }) => {
+const Images = ({ Query }) => {
   const { state, getData } = useContext(Image);
   useEffect(() => {
-    getData(Search);
-  }, [Search]);
+    getData(Query);
+  }, [Query]);
 
   return (
     <div>
@@ -16,6 +16,6 @@ const Images = ({ Search }) => {
   );
 };
 Images.propTypes = {
-  Search: PropTypes.string.isRequired
+  Query: PropTypes.string.isRequired
 };
 export default Images;

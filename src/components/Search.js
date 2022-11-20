@@ -4,11 +4,11 @@ import Images from "./Images";
 
 export const Search = () => {
   const { input } = useParams();
-  const Search = input;
+
   return (
     <div>
-      <h2>{Search} images</h2>
-      <Images Search={Search} />
+      <h2>{input} images</h2>
+      <Images Query={input} />
     </div>
   );
 };
