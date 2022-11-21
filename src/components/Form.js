@@ -21,7 +21,7 @@ const Form = () => {
   return (
     <form
       className="form"
-      onSubmit={(e) => searchHandler(e, navigate, keyword)}
+      onSubmit={(e) => searchHandler(e, navigate)}
     >
       <input
         type="text"
