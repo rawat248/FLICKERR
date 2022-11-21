@@ -2,7 +2,7 @@ import React from "react";
 import Images from "./Images";
 import PropTypes from "prop-types";
 
-const Item = ({ Query }) => {
+const Food = ({ Query }) => {
   return (
     <div>
       <h2>{Query} Pictures</h2>
@@ -10,8 +10,8 @@ const Item = ({ Query }) => {
     </div>
   );
 };
-Item.propTypes = {
+Food.propTypes = {
   Query: PropTypes.string.isRequired
 };
 
-export default Item;
+export default Food;
