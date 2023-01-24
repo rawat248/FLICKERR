@@ -1,4 +1,5 @@
 import React from "react";
+<<<<<<< HEAD
 import "./Mountain.css";
 import mountainImage from "../assets/p1.jpeg";
 import mountainImage1 from "../assets/p2.jpeg";
@@ -33,6 +34,21 @@ const Beaches = () => {
       </div>
     </div>
   );
+=======
+import Images from "./Images";
+import PropTypes from "prop-types";
+
+const Beaches = ({ Query }) => {
+  return (
+    <div>
+      <h2>{Query} Pictures</h2>
+      <Images Query={Query} />
+    </div>
+  );
+};
+Beaches.propTypes = {
+  Query: PropTypes.string.isRequired
+>>>>>>> 07d0d9f2efc0c5822eb5f6cbc1885b91ba1e5f42
 };
 
 export default Beaches;

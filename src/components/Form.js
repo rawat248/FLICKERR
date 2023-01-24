@@ -1,10 +1,35 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Form.css";
+import PropTypes from "prop-types";
+import { useNavigate } from "react-router-dom";
 
 const Form = () => {
+  const [keyword, setKeyword] = useState("");
+
+  const updateSearch = (e) => {
+    setKeyword(e.target.value);
+  };
+
+  const navigate = useNavigate();
+  const searchHandler = (e, navigate, searchInput) => {
+    e.preventDefault();
+    e.currentTarget.reset();
+    const url = `/search/${searchInput}`;
+    navigate(url);
+  };
+
   return (
-    <form className="form">
-      <input type="text" name="search" placeholder="Search..." />
+    <form
+      className="form"
+      onSubmit={(e) => searchHandler(e, navigate)}
+    >
+      <input
+        type="text"
+        value={keyword}
+        name="search"
+        placeholder="Search..."
+        onChange={updateSearch}
+      />
       <button type="submit">
         <svg height="32" width="32">
           <path
@@ -16,6 +41,12 @@ const Form = () => {
       </button>
     </form>
   );
+};
+Form.propTypes = {
+  navigate: PropTypes.string.isRequired
+};
+Form.propTypes = {
+  searchHandler: PropTypes.string.isRequired
 };
 
 export default Form;
