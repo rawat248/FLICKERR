@@ -1,6 +1,7 @@
 import axios from "axios";
 import React, { createContext, useState } from "react";
 import { apiKey } from "../components/Api";
+// import Images from "./components/Images";
 import PropTypes from "prop-types";
 
 export const Image = createContext();
@@ -15,6 +16,8 @@ const Data = ({ children }) => {
         setState(response.data.photos.photo);
       });
   };
+
+  // return <Images state={state} getData={getData}/>;
 
   return <Image.Provider value={{ state, getData }}>{children}</Image.Provider>;
 };
