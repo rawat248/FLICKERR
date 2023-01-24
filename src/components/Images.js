@@ -1,4 +1,5 @@
 import React, { useContext, useEffect } from "react";
+// import React, { useEffect } from "react";
 import { Image } from "../Data/Data";
 import Picture from "./Picture";
 import PropTypes from "prop-types";
